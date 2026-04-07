@@ -1,0 +1,14 @@
+# Java / Maven ignore
+target/
+*.class
+
+# IDEs
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Large Files / JDK
+oracleJdk*
+jdk*

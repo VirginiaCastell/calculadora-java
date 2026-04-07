@@ -1,0 +1,56 @@
+package com.example;
+
+/**
+ * Una clase simple que realiza operaciones matemáticas básicas.
+ * Esta clase está diseñada para demostrar el uso de sumas, 
+ * multiplicaciones con bucles for y sumatorias con bucles while.
+ */
+public class CalculadoraBasica {
+
+    /**
+     * Suma dos números enteros.
+     * 
+     * @param a Primer número a sumar.
+     * @param b Segundo número a sumar.
+     * @return El resultado de la suma de a + b.
+     */
+    public int sumar(int a, int b) {
+        return a + b;
+    }
+
+    /**
+     * Multiplica dos números enteros utilizando un bucle for.
+     * Simula la multiplicación como una serie de sumas repetidas.
+     * Solo funciona correctamente para multiplicadores positivos (b >= 0).
+     * 
+     * @param a El número que se va a multiplicar.
+     * @param b El multiplicador (número de veces que se suma a).
+     * @return El resultado de a multiplicado por b.
+     */
+    public int multiplicarConSumas(int a, int b) {
+        int resultado = 0;
+        // Bucle for: comienza en 0, llega hasta b, incrementando de 1 en 1
+        for (int i = 0; i < b; i++) {
+            resultado = resultado + a;
+        }
+        return resultado;
+    }
+
+    /**
+     * Calcula la suma de todos los números desde 1 hasta n utilizando un bucle while.
+     * Por ejemplo, si n es 3, el resultado será 1 + 2 + 3 = 6.
+     * 
+     * @param n El límite superior de la suma (debe ser >= 0).
+     * @return La sumatoria de 1 hasta n.
+     */
+    public int sumarHasta(int n) {
+        int suma = 0;
+        int contador = 1;
+        // Bucle while: mientras el contador sea menor o igual a n
+        while (contador <= n) {
+            suma = suma + contador;
+            contador++; // Incrementamos el contador para no entrar en un bucle infinito
+        }
+        return suma;
+    }
+}
