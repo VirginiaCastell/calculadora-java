@@ -72,10 +72,10 @@ public class CalculadoraBasica {
         System.out.print("Ingrese el segundo número: ");
         int num2 = sc.nextInt();
         
-        int suma = calculadora.sumar(num1, num2);
+        int suma = calculadora.sumar(num1, num2);//Llamo a la función sumar para poder usarla
 
         System.out.println("La suma de " + num1 + " y " + num2 + " es: " + suma);
-        sc.close();
+        sc.close();//Me pide cerrar el scanner
     }
 }
 
