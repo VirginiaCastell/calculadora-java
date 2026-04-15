@@ -66,16 +66,16 @@ public class CalculadoraBasica {
         int resultadoSumatoria = calculadora.sumarHasta(5);
         System.out.println("Resultado de la sumatoria hasta 5: " + resultadoSumatoria);
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingrese el primer número: ");
-        int num1 = sc.nextInt();
-        System.out.print("Ingrese el segundo número: ");
-        int num2 = sc.nextInt();
-        
-        int suma = calculadora.sumar(num1, num2);//Llamo a la función sumar para poder usarla
+        try (Scanner sc = new Scanner(System.in)) {//Otra forma de cerrar el Scanner es usando try.
+            System.out.print("Ingrese el primer número: ");
+            int num1 = sc.nextInt();
+            System.out.print("Ingrese el segundo número: ");
+            int num2 = sc.nextInt();
+            
+            int suma = calculadora.sumar(num1, num2);//Llamo a la función sumar para poder usarla
 
-        System.out.println("La suma de " + num1 + " y " + num2 + " es: " + suma);
-        sc.close();//Me pide cerrar el scanner
+            System.out.println("La suma de " + num1 + " y " + num2 + " es: " + suma);
+        }
     }
 }
 
