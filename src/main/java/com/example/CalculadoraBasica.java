@@ -1,12 +1,13 @@
 package com.example;
 
+import java.util.Scanner;
+
 /**
  * Una clase simple que realiza operaciones matemáticas básicas.
  * Esta clase está diseñada para demostrar el uso de sumas, 
  * multiplicaciones con bucles for y sumatorias con bucles while.
  */
 public class CalculadoraBasica {
-
     /**
      * Suma dos números enteros.
      * 
@@ -64,5 +65,17 @@ public class CalculadoraBasica {
 
         int resultadoSumatoria = calculadora.sumarHasta(5);
         System.out.println("Resultado de la sumatoria hasta 5: " + resultadoSumatoria);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese el primer número: ");
+        int num1 = sc.nextInt();
+        System.out.print("Ingrese el segundo número: ");
+        int num2 = sc.nextInt();
+        
+        int suma = calculadora.sumar(num1, num2);
+
+        System.out.println("La suma de " + num1 + " y " + num2 + " es: " + suma);
     }
 }
+
+
