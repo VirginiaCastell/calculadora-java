@@ -53,4 +53,16 @@ public class CalculadoraBasica {
         }
         return suma;
     }
+
+    public static void main(String[] args) {
+        CalculadoraBasica calculadora = new CalculadoraBasica();
+        int resultadoSuma = calculadora.sumar(5, 7);
+        System.out.println("Resultado de la suma: " + resultadoSuma);
+
+        int resultadoMultiplicacion = calculadora.multiplicarConSumas(4, 3);
+        System.out.println("Resultado de la multiplicación con sumas: " + resultadoMultiplicacion);
+
+        int resultadoSumatoria = calculadora.sumarHasta(5);
+        System.out.println("Resultado de la sumatoria hasta 5: " + resultadoSumatoria);
+    }
 }
