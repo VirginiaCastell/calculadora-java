@@ -1,7 +1,7 @@
 package com.example;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Una clase simple que realiza operaciones matemáticas básicas.
@@ -200,10 +200,10 @@ public class CalculadoraBasica {
         // vector [1]= 3;
         // vector [2]= 5;
 
-        vector_2.add(1);// Añadimos valores al ArraList
-        vector_2.add(2);// Todo el tiempo los añade de forma consecutiva
+        //vector_2.add(1);// Añadimos valores al ArraList
+        //vector_2.add(2);// Todo el tiempo los añade de forma consecutiva
 
-        System.out.print(vector_2[0]);// Imprimimos la posición 0
+        //System.out.print(vector_2[0]);// Imprimimos la posición 0
         System.out.print(vector_2.get(0));// Otra forma de imprimir la posición 0, se usa get
 
         vector_2.size();//Para obtener el tamaño del ArraList
