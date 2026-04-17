@@ -66,3 +66,4 @@ public class CalculadoraBasicaTest {
         assertEquals(15, resultado, "La suma de los números del 1 al 5 debería ser 15");
     }
 }
+
