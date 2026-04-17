@@ -76,7 +76,7 @@ public class CalculadoraBasica {
      */
     public int factorial(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("El número debe ser no negativo.");
+            throw new IllegalArgumentException("El número debe ser positivo.");
         }
         int resultado = 1;
         for (int i = 1; i <= n; i++) {

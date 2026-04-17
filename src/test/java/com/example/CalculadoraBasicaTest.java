@@ -65,5 +65,55 @@ public class CalculadoraBasicaTest {
         // Sumatoria de 1 a 5: 1+2+3+4+5 = 15
         assertEquals(15, resultado, "La suma de los números del 1 al 5 debería ser 15");
     }
+
+    /**
+     * Test 6: Verifica que el número sea par.
+     */
+    @Test
+    public void testEsPar() {
+        CalculadoraBasica calculadora = new CalculadoraBasica();
+        boolean resultado = calculadora.esPar(n: 2);
+        // Números pares n%2==0
+        assertEquals(true, resultado, message: "El número es par");
+    } 
+
+    /**
+     * Test 7: Verifica que el factorial del número sea correcto.
+     */
+    @Test
+    public void testFactorial() {
+        CalculadoraBasica calculadora = new CalculadoraBasica();
+        int resultado = calculadora.factorial(n: 5);
+        // (5*4*3*2*1)
+        assertEquals(120, resultado, message: "El factorial es: 120");
+    }    
+
+    /**
+     * Test 8: Verifica que el número sea primo.
+     */
+    @Test
+    public void testEsPrimo () {
+        CalculadoraBasica calculadora = new CalculadoraBasica();
+        boolean resultaro = calculadora.esPrimo(n: 7);
+        // El número es primo si es divisible solo entre 1 y el mismo
+        asserEquals(expected: true, resultado, message: "El número es primo" );  
+    }
+        
+    /**
+     * Test 9: Verifica que el número está invertido
+     *  */    
+    @Test
+    public void testinvertirNumero() {
+        CalculadoraBasica calculadora = new CalculadoraBasica();
+        int resultado = calculadora.invertirNumero(12345);
+        // Comienza por el final del número
+        assertEquals(54321, resultado, message: "El número invertido es: 54321);
+
+
+
+    /**
+     * Test 10: Verifica que los dígitos correspondientes al número son correctos
+     */
+
 }
 
